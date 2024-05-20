@@ -46,12 +46,12 @@ function M.setup(opts)
     if option ~= "commentstring" then
       return get_option(filetype, option)
     end
-    local lang = vim.treesitter.language.get_lang(filetype)
+    local lang = vim.treesitter.language.get_lang(filetype) or filetype
 
     local ret = opts.lang[lang]
     if type(ret) == "table" then
-      local node = vim.treesitter.get_node({ ignore_injections = false })
-      while node do
+      local ok, node = pcall(vim.treesitter.get_node, { ignore_injections = false })
+      while ok and node do
         if ret[node:type()] then
           ret = ret[node:type()]
           break
