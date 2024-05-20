@@ -4,10 +4,10 @@
 Table of Contents                         *ts-comments.nvim-table-of-contents*
 
 1. ts-comments.nvim                        |ts-comments.nvim-ts-comments.nvim|
-2. Requirements                                |ts-comments.nvim-requirements|
-3. Installation                                |ts-comments.nvim-installation|
-4. Configuration                              |ts-comments.nvim-configuration|
-5. Related                                          |ts-comments.nvim-related|
+  - Requirements              |ts-comments.nvim-ts-comments.nvim-requirements|
+  - Installation              |ts-comments.nvim-ts-comments.nvim-installation|
+  - Configuration            |ts-comments.nvim-ts-comments.nvim-configuration|
+  - Related                        |ts-comments.nvim-ts-comments.nvim-related|
 
 ==============================================================================
 1. ts-comments.nvim                        *ts-comments.nvim-ts-comments.nvim*
@@ -18,14 +18,12 @@ Tiny plugin to enhance Neovim’s native comments:
 - Supports different comment strings for different **treesitter** node types
 
 
-==============================================================================
-2. Requirements                                *ts-comments.nvim-requirements*
+REQUIREMENTS                  *ts-comments.nvim-ts-comments.nvim-requirements*
 
 - Neovim >= 0.10.0
 
 
-==============================================================================
-3. Installation                                *ts-comments.nvim-installation*
+INSTALLATION                  *ts-comments.nvim-ts-comments.nvim-installation*
 
 Using lazy.nvim <https://github.com/folke/lazy.nvim>
 
@@ -39,8 +37,7 @@ Using lazy.nvim <https://github.com/folke/lazy.nvim>
 <
 
 
-==============================================================================
-4. Configuration                              *ts-comments.nvim-configuration*
+CONFIGURATION                *ts-comments.nvim-ts-comments.nvim-configuration*
 
 Default configuration:
 
@@ -93,8 +90,7 @@ Default configuration:
 <
 
 
-==============================================================================
-5. Related                                          *ts-comments.nvim-related*
+RELATED                            *ts-comments.nvim-ts-comments.nvim-related*
 
 - nvim-ts-context-commentstring <https://github.com/JoosepAlviste/nvim-ts-context-commentstring>
 
