@@ -17,7 +17,8 @@ Using [lazy.nvim](https://github.com/folke/lazy.nvim):
 {
   "folke/ts-comments.nvim",
   opts = {}
-  event = "VeryLazy"
+  event = "VeryLazy",
+  enabled = vim.fn.has("nvim-0.10.0") == 1,
 }
 ```
 
