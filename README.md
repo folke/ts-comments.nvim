@@ -1,15 +1,15 @@
-# ts-comments.nvim
+# 🚀 ts-comments.nvim
 
 Super simple plugin to enhance Neovim's native comments:
 
 - Easily override the comment string for a given **treesitter** language
 - Supports different comment strings for different **treesitter** node types
 
-# Requirements
+# ⚡️ Requirements
 
 - Neovim >= 0.10.0
 
-# Installation
+# 📦 Installation
 
 Using [lazy.nvim](https://github.com/folke/lazy.nvim):
 
@@ -21,7 +21,7 @@ Using [lazy.nvim](https://github.com/folke/lazy.nvim):
 }
 ```
 
-# Configuration
+# ⚙️ Configuration
 
 Default configuration:
 
@@ -63,3 +63,7 @@ Default configuration:
 }
 
 ```
+
+# 🔗 Related
+
+- [nvim-ts-context-commentstring](https://github.com/JoosepAlviste/nvim-ts-context-commentstring)
