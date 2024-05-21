@@ -33,6 +33,7 @@ Default configuration:
     c = "// %s",
     cpp = "// %s",
     css = "/* %s */",
+    c_sharp = "// %s",
     gleam = "// %s",
     glimmer = "{{! %s }}",
     graphql = "# %s",
