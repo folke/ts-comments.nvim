@@ -45,6 +45,10 @@ M.options = {
     rust = { "// %s", "/* %s */" },
     sql = "-- %s",
     svelte = "<!-- %s -->",
+    templ = {
+      "// %s",
+      component_block = "<!-- %s -->",
+    },
     terraform = "# %s",
     tsx = {
       "// %s", -- default commentstring when no treesitter node matches
