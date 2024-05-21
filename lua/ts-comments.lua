@@ -11,6 +11,7 @@ local options = {
     c = "// %s",
     cpp = "// %s",
     css = "/* %s */",
+    cue = "// %s",
     c_sharp = "// %s",
     gleam = "// %s",
     glimmer = "{{! %s }}",
