@@ -59,6 +59,7 @@ Default configuration:
     php = "// %s",
     rego = "# %s",
     rescript = "// %s",
+    ruby = "# %s",
     sql = "-- %s",
     svelte = "<!-- %s -->",
     terraform = "# %s",
