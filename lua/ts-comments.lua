@@ -20,6 +20,7 @@ local options = {
     handlebars = "{{! %s }}",
     hcl = "# %s",
     html = "<!-- %s -->",
+    htmldjango = "{# %s #}",
     ini = "; %s",
     lua = { "-- %s", "--- %s" }, -- langs can have multiple commentstrings
     php = "// %s",
