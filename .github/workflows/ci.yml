@@ -40,6 +40,10 @@ jobs:
           chmod a+x ./nvim.appimage
           ./nvim.appimage --appimage-extract
           echo "/tmp/nvim/squashfs-root/usr/bin/" >> $GITHUB_PATH
+      - name: Generate docs
+        run: |
+          nvim --version
+          nvim --headless -u tests/init.lua -l "tests/docs.lua"
       - name: panvimdoc
         uses: kdheepak/panvimdoc@main
         with:
