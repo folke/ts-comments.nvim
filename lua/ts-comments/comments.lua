@@ -1,59 +1,13 @@
---# selene: allow(mixed_table)
+local Config = require("ts-comments.config")
+
 local M = {}
-
-local get_option = vim.filetype.get_option
-
----@class TSCommentsOptions
----@field lang table<string, string|string[]|table<string,string>>
-local options = {
-  lang = {
-    astro = "<!-- %s -->",
-    c = "// %s",
-    cpp = "// %s",
-    css = "/* %s */",
-    cue = "// %s",
-    c_sharp = "// %s",
-    gleam = "// %s",
-    glimmer = "{{! %s }}",
-    go = "// %s",
-    graphql = "# %s",
-    handlebars = "{{! %s }}",
-    hcl = "# %s",
-    html = "<!-- %s -->",
-    ini = "; %s",
-    lua = { "-- %s", "--- %s" }, -- langs can have multiple commentstrings
-    php = "// %s",
-    rego = "# %s",
-    rescript = "// %s",
-    ruby = "# %s",
-    sql = "-- %s",
-    svelte = "<!-- %s -->",
-    terraform = "# %s",
-    tsx = {
-      "// %s", -- default commentstring when no treesitter node matches
-      "/* %s */",
-      call_expression = "// %s", -- specific commentstring for call_expression
-      jsx_attribute = "// %s",
-      jsx_element = "{/* %s */}",
-      jsx_fragment = "{/* %s */}",
-      spread_element = "// %s",
-      statement_block = "// %s",
-    },
-    twig = "{# %s #}",
-    typescript = "// %s",
-    vim = '" %s',
-    vue = "<!-- %s -->",
-  },
-}
----@diagnostic disable-next-line: param-type-mismatch
-options.lang.javascript = vim.deepcopy(options.lang.tsx)
 
 -- Resolves the possible commentstrings for a given filetype in the current line
 ---@param ft string
 ---@return string[]
 local function resolve(ft)
   local lang = vim.treesitter.language.get_lang(ft) or ft
-  local spec = options.lang[lang]
+  local spec = Config.options.lang[lang]
   local ret = {} ---@type string[]
 
   local have = {} ---@type table<string, boolean>
@@ -96,7 +50,7 @@ local function resolve(ft)
   end
 
   add(spec) -- always add all found patterns
-  add(get_option(ft, "commentstring")) -- always include the commentstring from the buffer
+  add(Config._get_option(ft, "commentstring")) -- always include the commentstring from the buffer
   return ret
 end
 
@@ -122,18 +76,6 @@ function M.get(ft)
   end
 
   return cs
-end
-
-function M.setup(opts)
-  options = vim.tbl_deep_extend("force", options, opts or {})
-
-  ---@diagnostic disable-next-line: duplicate-set-field
-  vim.filetype.get_option = function(filetype, option)
-    if option ~= "commentstring" then
-      return get_option(filetype, option)
-    end
-    return M.get(filetype)
-  end
 end
 
 return M
