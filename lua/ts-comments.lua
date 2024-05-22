@@ -22,6 +22,7 @@ local options = {
     html = "<!-- %s -->",
     ini = "; %s",
     lua = { "-- %s", "--- %s" }, -- langs can have multiple commentstrings
+    nix = "# %s",
     php = "// %s",
     rego = "# %s",
     rescript = "// %s",
