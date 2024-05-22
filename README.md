@@ -31,6 +31,8 @@ Using [lazy.nvim](https://github.com/folke/lazy.nvim):
 
 Default configuration:
 
+<!-- config:start -->
+
 ```lua
 {
   lang = {
@@ -82,9 +84,11 @@ Default configuration:
     vue = "<!-- %s -->",
   },
 }
-
 ```
+
+<!-- config:end -->
 
 ## 🔗 Related
 
 - [nvim-ts-context-commentstring](https://github.com/JoosepAlviste/nvim-ts-context-commentstring)
+
