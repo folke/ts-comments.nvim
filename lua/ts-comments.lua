@@ -15,6 +15,7 @@ local options = {
     c_sharp = "// %s",
     gleam = "// %s",
     glimmer = "{{! %s }}",
+    go = "// %s",
     graphql = "# %s",
     handlebars = "{{! %s }}",
     hcl = "# %s",
