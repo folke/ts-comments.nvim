@@ -47,6 +47,7 @@ Default configuration:
     handlebars = "{{! %s }}",
     hcl = "# %s",
     html = "<!-- %s -->",
+    htmldjango = "{# %s #}",
     ini = "; %s",
     javascript = {
       "// %s",
