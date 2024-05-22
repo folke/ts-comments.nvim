@@ -65,6 +65,7 @@ Default configuration:
     php = "// %s",
     rego = "# %s",
     rescript = "// %s",
+    rust = { "// %s", "/* %s */", "/// %s" },
     svelte = "<!-- %s -->",
     terraform = "# %s",
     tsx = {
