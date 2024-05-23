@@ -12,6 +12,7 @@ M.options = {
     blueprint = "// %s",
     c = "// %s",
     c_sharp = "// %s",
+    clojure = { ";; %s", "; %s" },
     cpp = "// %s",
     cs_project = "<!-- %s -->",
     css = "/* %s */",
