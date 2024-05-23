@@ -16,7 +16,7 @@ jobs:
         shell: bash
         run: |
           mkdir -p /tmp/nvim
-          wget -q https://github.com/neovim/neovim/releases/download/nightly/nvim.appimage -O /tmp/nvim/nvim.appimage
+          wget -q https://github.com/neovim/neovim/releases/download/stable/nvim.appimage -O /tmp/nvim/nvim.appimage
           cd /tmp/nvim
           chmod a+x ./nvim.appimage
           ./nvim.appimage --appimage-extract
@@ -36,7 +36,7 @@ jobs:
         shell: bash
         run: |
           mkdir -p /tmp/nvim
-          wget -q https://github.com/neovim/neovim/releases/download/nightly/nvim.appimage -O /tmp/nvim/nvim.appimage
+          wget -q https://github.com/neovim/neovim/releases/download/stable/nvim.appimage -O /tmp/nvim/nvim.appimage
           cd /tmp/nvim
           chmod a+x ./nvim.appimage
           ./nvim.appimage --appimage-extract
