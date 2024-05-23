@@ -46,6 +46,9 @@ Default configuration:
     css = "/* %s */",
     cue = "// %s",
     c_sharp = "// %s",
+    cs_project = "<!-- %s -->",
+    fsharp = "// %s",
+    fsharp_project = "<!-- %s -->",
     gleam = "// %s",
     glimmer = "{{! %s }}",
     handlebars = "{{! %s }}",
@@ -63,6 +66,7 @@ Default configuration:
       statement_block = "// %s",
     },
     lua = { "-- %s", "--- %s" }, -- langs can have multiple commentstrings
+    ocaml = "(* %s *)",
     php = "// %s",
     rego = "# %s",
     rescript = "// %s",
@@ -83,6 +87,9 @@ Default configuration:
     typescript = "// %s",
     vim = '" %s',
     vue = "<!-- %s -->",
+    axaml = "<!-- %s -->",
+    xaml = "<!-- %s -->",
+    xml = "<!-- %s -->",
   },
 }
 ```
