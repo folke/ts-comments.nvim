@@ -28,6 +28,7 @@ jobs:
           nvim --headless -u tests/init.lua -c "PlenaryBustedDirectory tests/ {minimal_init = 'tests/init.lua', sequential = true}"
   docs:
     runs-on: ubuntu-latest
+    if: ${{ github.ref == 'refs/heads/main' }}
     needs: tests
     steps:
       - uses: actions/checkout@v3
