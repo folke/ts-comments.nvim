@@ -33,12 +33,15 @@ local function resolve(ft)
 
   if type(spec) == "table" and not vim.islist(spec) then
     local line = vim.fn.getline(".")
-    local cursor = vim.api.nvim_win_get_cursor(0)
+    local pos = vim.api.nvim_win_get_cursor(0)
     local indent = line:match("^%s*()")
+    -- set position to the first non whitespace character
+    if indent and pos[2] < indent - 1 then
+      pos[2] = indent - 1
+    end
     local ok, node = pcall(vim.treesitter.get_node, {
       ignore_injections = false, -- include injected languages
-      -- set position to the first non whitespace character
-      pos = { vim.fn.line(".") - 1, indent and (indent - 1) or cursor[2] },
+      pos = pos,
     })
     while ok and node do
       if spec[node:type()] then
