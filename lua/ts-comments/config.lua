@@ -11,6 +11,7 @@ M.options = {
     axaml = "<!-- %s -->",
     blueprint = "// %s",
     c = "// %s",
+    clojure = { ";; %s", "; %s" },
     c_sharp = "// %s",
     cpp = "// %s",
     cs_project = "<!-- %s -->",
