@@ -8,6 +8,7 @@ M._get_option = vim.filetype.get_option
 M.options = {
   lang = {
     astro = "<!-- %s -->",
+    blueprint = "// %s",
     c = "// %s",
     cpp = "// %s",
     css = "/* %s */",
