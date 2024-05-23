@@ -40,6 +40,7 @@ Default configuration:
 {
   lang = {
     astro = "<!-- %s -->",
+    blueprint = "// %s",
     c = "// %s",
     cpp = "// %s",
     css = "/* %s */",
