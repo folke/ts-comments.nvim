@@ -29,7 +29,7 @@ Using [lazy.nvim](https://github.com/folke/lazy.nvim):
 
 ## ⚙️ Configuration
 
-**ts-comments.nvim** uses the default Neovim commentstring as a fallback,
+**ts-comments.nvim** uses the default Neovim `commentstring` as a fallback,
 so there's no need to configure every language.
 
 Default configuration:
