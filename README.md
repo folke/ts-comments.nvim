@@ -73,6 +73,7 @@ Default configuration:
     rego = "# %s",
     rescript = "// %s",
     rust = { "// %s", "/* %s */", "/// %s" },
+    ruby = "# %s",
     svelte = "<!-- %s -->",
     terraform = "# %s",
     tsx = {
