@@ -40,6 +40,7 @@ M.options = {
     php = "// %s",
     rego = "# %s",
     rescript = "// %s",
+    ruby = "# %s",
     rust = { "// %s", "/* %s */", "/// %s" },
     svelte = "<!-- %s -->",
     terraform = "# %s",
