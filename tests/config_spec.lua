@@ -1,5 +1,6 @@
 describe("Default options are sane", function()
   local Config = require("ts-comments.config")
+  local Comments = require("ts-comments.comments")
   require("nvim-treesitter.parsers")
 
   for lang, spec in pairs(Config.options.lang) do
@@ -9,17 +10,18 @@ describe("Default options are sane", function()
         fts = { lang }
       end
       local css = {}
+      local all_same = true
       for _, ft in ipairs(fts) do
-        local cs = Config._get_option(ft, "commentstring")
-        if cs ~= "" then
-          css[cs] = cs
+        local css_default = Comments.resolve(ft, { ts = false, spec = "" })
+        local css_config = Comments.resolve(ft, { ts = false })
+        css = css_config
+
+        if not vim.deep_equal(css_default, css_config) then
+          all_same = false
+          break
         end
       end
-      spec = type(spec) == "table" and spec or { spec }
-      css = vim.tbl_keys(css)
-      if #css == 1 and #spec == 1 then
-        assert(css[1] ~= spec[1], "should not be default commentstring `" .. css[1] .. "`")
-      end
+      assert(not all_same, "should not be default commentstring `" .. vim.inspect(css) .. "`")
     end)
   end
 
