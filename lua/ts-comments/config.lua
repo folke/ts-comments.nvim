@@ -3,8 +3,10 @@ local M = {}
 
 M._get_option = vim.filetype.get_option
 
+---@alias TSCommentsSpec string|string[]|table<string,string|string[]>
+
 ---@class TSCommentsOptions
----@field lang table<string, string|string[]|table<string,string>>
+---@field lang table<string, TSCommentsSpec>
 M.options = {
   lang = {
     astro = "<!-- %s -->",
@@ -54,7 +56,7 @@ M.options = {
       statement_block = "// %s",
     },
     twig = "{# %s #}",
-    typescript = "// %s",
+    typescript = { "// %s", "/* %s */" },
     vim = '" %s',
     vue = "<!-- %s -->",
     xaml = "<!-- %s -->",
