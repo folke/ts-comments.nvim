@@ -47,7 +47,6 @@ Default configuration:
     clojure = { ";; %s", "; %s" },
     cpp = "// %s",
     cs_project = "<!-- %s -->",
-    css = "/* %s */",
     cue = "// %s",
     fsharp = "// %s",
     fsharp_project = "<!-- %s -->",
@@ -67,8 +66,6 @@ Default configuration:
       spread_element = "// %s",
       statement_block = "// %s",
     },
-    lua = { "-- %s", "--- %s" }, -- langs can have multiple commentstrings
-    ocaml = "(* %s *)",
     php = "// %s",
     rego = "# %s",
     rescript = "// %s",
@@ -86,11 +83,9 @@ Default configuration:
       statement_block = "// %s",
     },
     twig = "{# %s #}",
-    typescript = "// %s",
-    vim = '" %s',
+    typescript = { "// %s", "/* %s */" }, -- langs can have multiple commentstrings
     vue = "<!-- %s -->",
     xaml = "<!-- %s -->",
-    xml = "<!-- %s -->",
   },
 }
 ```
