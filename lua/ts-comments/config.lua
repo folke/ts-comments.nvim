@@ -41,6 +41,7 @@ M.options = {
     rescript = "// %s",
     rust = { "// %s", "/* %s */" },
     svelte = "<!-- %s -->",
+    sql = "-- %s",
     terraform = "# %s",
     tsx = {
       "// %s", -- default commentstring when no treesitter node matches
