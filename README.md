@@ -56,6 +56,7 @@ Default configuration:
     handlebars = "{{! %s }}",
     hcl = "# %s",
     html = "<!-- %s -->",
+    hyprlang = "# %s",
     ini = "; %s",
     javascript = {
       "// %s", -- default commentstring when no treesitter node matches
