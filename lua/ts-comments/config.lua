@@ -22,6 +22,7 @@ M.options = {
     fsharp_project = "<!-- %s -->",
     gleam = "// %s",
     glimmer = "{{! %s }}",
+    graphql = "# %s",
     handlebars = "{{! %s }}",
     hcl = "# %s",
     html = "<!-- %s -->",
