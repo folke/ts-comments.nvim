@@ -28,6 +28,7 @@ M.options = {
     html = "<!-- %s -->",
     hyprlang = "# %s",
     ini = "; %s",
+    ipynb = "# %s",
     javascript = {
       "// %s", -- default commentstring when no treesitter node matches
       "/* %s */",
