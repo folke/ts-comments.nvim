@@ -1,4 +1,4 @@
-*ts-comments.nvim.txt*      For Neovim >= 0.10.0     Last change: 2024 June 10
+*ts-comments.nvim.txt*      For Neovim >= 0.10.0     Last change: 2024 July 03
 
 ==============================================================================
 Table of Contents                         *ts-comments.nvim-table-of-contents*
@@ -88,6 +88,10 @@ Default configuration:
         rust = { "// %s", "/* %s */" },
         sql = "-- %s",
         svelte = "<!-- %s -->",
+        templ = {
+          "// %s",
+          component_block = "<!-- %s -->",
+        },
         terraform = "# %s",
         tsx = {
           "// %s", -- default commentstring when no treesitter node matches
