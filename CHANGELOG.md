@@ -1,5 +1,21 @@
 # Changelog
 
+## [1.3.0](https://github.com/folke/ts-comments.nvim/compare/v1.2.0...v1.3.0) (2024-07-05)
+
+
+### Features
+
+* add basic Templ support ([#10](https://github.com/folke/ts-comments.nvim/issues/10)) ([1bbcef8](https://github.com/folke/ts-comments.nvim/commit/1bbcef8a7e0e0b0f75b10eecd427c3d973470649))
+* added hyprlang ([e0c5d7a](https://github.com/folke/ts-comments.nvim/commit/e0c5d7a058645f90eed0e9a2b78fae58546e662e))
+* **graphql:** add commentstring for graphql ([#30](https://github.com/folke/ts-comments.nvim/issues/30)) ([83bb13e](https://github.com/folke/ts-comments.nvim/commit/83bb13e23985b33e76b6245a1204487bcb581812))
+* **notebook:** add commentstring for jupyter notebook files ([#34](https://github.com/folke/ts-comments.nvim/issues/34)) ([47a91de](https://github.com/folke/ts-comments.nvim/commit/47a91dea241579c82b93b004473f7a4586a90c12))
+* **sql:** add sql commentstring ([#28](https://github.com/folke/ts-comments.nvim/issues/28)) ([596c671](https://github.com/folke/ts-comments.nvim/commit/596c671190fd944442c99368759e193738d12602))
+
+
+### Bug Fixes
+
+* remove Rust documentation comments ([#22](https://github.com/folke/ts-comments.nvim/issues/22)) ([cd9d011](https://github.com/folke/ts-comments.nvim/commit/cd9d011259e93a3f635725fe0bcb848da150f3ae))
+
 ## [1.2.0](https://github.com/folke/ts-comments.nvim/compare/v1.1.0...v1.2.0) (2024-05-26)
 
 
