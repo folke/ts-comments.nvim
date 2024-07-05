@@ -11,5 +11,6 @@ require("lazy.minit").setup({
       dir = vim.uv.cwd(),
       opts = {},
     },
+    "nvim-treesitter/nvim-treesitter",
   },
 })
