@@ -12,4 +12,3 @@ jobs:
     with:
       plugin: ts-comments.nvim
       repo: folke/ts-comments.nvim
-      tests: true
