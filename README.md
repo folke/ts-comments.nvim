@@ -69,6 +69,7 @@ Default configuration:
       spread_element = "// %s",
       statement_block = "// %s",
     },
+    kdl = "// %s",
     php = "// %s",
     rego = "# %s",
     rescript = "// %s",
