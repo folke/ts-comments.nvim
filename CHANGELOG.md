@@ -1,5 +1,12 @@
 # Changelog
 
+## [1.4.0](https://github.com/folke/ts-comments.nvim/compare/v1.3.0...v1.4.0) (2024-07-15)
+
+
+### Features
+
+* **kdl:** added kdl ([#44](https://github.com/folke/ts-comments.nvim/issues/44)) ([b7bccdb](https://github.com/folke/ts-comments.nvim/commit/b7bccdb5d17f92c42d03f2b157ff44fb7a3af888))
+
 ## [1.3.0](https://github.com/folke/ts-comments.nvim/compare/v1.2.0...v1.3.0) (2024-07-05)
 
 
