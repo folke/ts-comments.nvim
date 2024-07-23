@@ -44,6 +44,7 @@ M.options = {
     rescript = "// %s",
     rust = { "// %s", "/* %s */" },
     sql = "-- %s",
+    styled = "/* %s */",
     svelte = "<!-- %s -->",
     templ = {
       "// %s",
