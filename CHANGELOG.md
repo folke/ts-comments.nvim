@@ -1,5 +1,12 @@
 # Changelog
 
+## [1.5.0](https://github.com/folke/ts-comments.nvim/compare/v1.4.0...v1.5.0) (2024-07-23)
+
+
+### Features
+
+* **styled:** add styled-components support ([#50](https://github.com/folke/ts-comments.nvim/issues/50)) ([bd3841e](https://github.com/folke/ts-comments.nvim/commit/bd3841ef19dac0d3aa0240b6a825bcc1edc4bff0))
+
 ## [1.4.0](https://github.com/folke/ts-comments.nvim/compare/v1.3.0...v1.4.0) (2024-07-15)
 
 
