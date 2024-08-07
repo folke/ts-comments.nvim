@@ -11,6 +11,7 @@ M.options = {
   lang = {
     astro = "<!-- %s -->",
     axaml = "<!-- %s -->",
+    bicep = "// %s",
     blueprint = "// %s",
     c = "// %s",
     c_sharp = "// %s",
