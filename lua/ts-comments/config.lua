@@ -65,6 +65,7 @@ M.options = {
     typescript = { "// %s", "/* %s */" }, -- langs can have multiple commentstrings
     vue = "<!-- %s -->",
     xaml = "<!-- %s -->",
+    bicep = "// %s",
   },
 }
 
