@@ -41,6 +41,7 @@ M.options = {
       statement_block = "// %s",
     },
     php = "// %s",
+    proto = { "// %s", "/* %s */" },
     rego = "# %s",
     rescript = "// %s",
     rust = { "// %s", "/* %s */" },
@@ -75,6 +76,9 @@ function M.setup(opts)
 
   ---@diagnostic disable-next-line: duplicate-set-field
   vim.filetype.get_option = function(filetype, option)
+    if filetype == "comment" then
+      filetype = vim.bo.filetype
+    end
     if option ~= "commentstring" then
       return M._get_option(filetype, option)
     end
