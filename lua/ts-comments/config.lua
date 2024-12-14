@@ -45,6 +45,7 @@ M.options = {
     rego = "# %s",
     rescript = "// %s",
     rust = { "// %s", "/* %s */" },
+    scss = { "// %s", "/* %s */" },
     sql = "-- %s",
     styled = "/* %s */",
     svelte = "<!-- %s -->",
