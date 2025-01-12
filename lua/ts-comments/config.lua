@@ -42,6 +42,10 @@ M.options = {
     },
     php = "// %s",
     proto = { "// %s", "/* %s */" },
+    razor = {
+      "@* %s *@",
+      razor_block = "// %s",
+    },
     rego = "# %s",
     rescript = "// %s",
     rust = { "// %s", "/* %s */" },
