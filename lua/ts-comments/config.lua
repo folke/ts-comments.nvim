@@ -66,7 +66,10 @@ M.options = {
     },
     twig = "{# %s #}",
     typescript = { "// %s", "/* %s */" }, -- langs can have multiple commentstrings
-    vue = "<!-- %s -->",
+    vue = {
+      "<!-- %s -->",
+      script_element = "// %s",
+    },
     xaml = "<!-- %s -->",
   },
 }
