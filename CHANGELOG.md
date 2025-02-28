@@ -1,5 +1,15 @@
 # Changelog
 
+## [1.6.0](https://github.com/folke/ts-comments.nvim/compare/v1.5.0...v1.6.0) (2025-02-27)
+
+
+### Features
+
+* **config:** add bicep comment string ([#54](https://github.com/folke/ts-comments.nvim/issues/54)) ([de901a7](https://github.com/folke/ts-comments.nvim/commit/de901a73aa92a972c6318f7c0f6c765e940096d3))
+* **config:** add just ([#68](https://github.com/folke/ts-comments.nvim/issues/68)) ([c51c24c](https://github.com/folke/ts-comments.nvim/commit/c51c24ce567002359e8850304a9ba8d89ff63046))
+* **config:** add support for proto and ft's without commentstring ([#56](https://github.com/folke/ts-comments.nvim/issues/56)) ([94d4942](https://github.com/folke/ts-comments.nvim/commit/94d494223c5e66c036ecdaad270c5aac6522b017))
+* **config:** add support for scss ([#59](https://github.com/folke/ts-comments.nvim/issues/59)) ([9f54eb8](https://github.com/folke/ts-comments.nvim/commit/9f54eb8bddf4dede2f32606479e1b4f2388d6a3a))
+
 ## [1.5.0](https://github.com/folke/ts-comments.nvim/compare/v1.4.0...v1.5.0) (2024-07-23)
 
 
