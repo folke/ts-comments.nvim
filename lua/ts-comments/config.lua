@@ -40,6 +40,7 @@ M.options = {
       spread_element = "// %s",
       statement_block = "// %s",
     },
+    just = "# %s",
     php = "// %s",
     proto = { "// %s", "/* %s */" },
     rego = "# %s",
