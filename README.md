@@ -52,6 +52,8 @@ Default configuration:
     fsharp_project = "<!-- %s -->",
     gleam = "// %s",
     glimmer = "{{! %s }}",
+    gomod = "// %s",
+    gowork = "// %s",
     graphql = "# %s",
     handlebars = "{{! %s }}",
     hcl = "# %s",
