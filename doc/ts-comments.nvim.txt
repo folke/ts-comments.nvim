@@ -1,4 +1,5 @@
 *ts-comments.nvim.txt*                                   ts-comments.nvim docs
+                                       For Neovim    Last change: 2026 June 29
 
 ==============================================================================
 Table of Contents                         *ts-comments.nvim-table-of-contents*
