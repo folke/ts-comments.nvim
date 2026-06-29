@@ -9,7 +9,8 @@ end
 
 local function get_comments(ft)
   local cc = Config._get_option(ft, "comments")
-  if cc == vim.opt.comments._info.default then
+  local opt = vim.api.nvim_get_option_info2("comments", { buf = vim.api.nvim_get_current_buf(), scope = "local" })
+  if opt and cc == opt.default then
     return {}
   end
   return vim.tbl_filter(
